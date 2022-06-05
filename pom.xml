@@ -9,11 +9,11 @@
 		<version>2.6.7</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.petcare</groupId>
-	<artifactId>petcare</artifactId>
+	<groupId>com.guliver</groupId>
+	<artifactId>guliver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>petcare</name>
-	<description>Projeto PetCare</description>
+	<description>Pitch Projeto Guliver</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -34,16 +34,16 @@
 			<optional>true</optional>
 		</dependency>
   
+<!--
 		<dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
 			<scope>runtime</scope> 
 		</dependency>
-<!--
+-->					
     	<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
--->					
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>

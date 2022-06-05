@@ -10,7 +10,7 @@ import org.hibernate.annotations.GenericGenerator;
 public class HotelModel {
 
 	@Id
-	// @GeneratedValue(strategy = GenerationType.IDENTITY) // only mysql, below is Postgree
+	//@GeneratedValue(strategy = GenerationType.IDENTITY) // only mysql, below is Postgree
 	@GeneratedValue(generator = "increment")
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long id;
