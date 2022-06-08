@@ -31,37 +31,9 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+
     <header>
         <div class="header-area ">
-            <div class="header-top_area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-8">
-                            <div class="short_contact_list">
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-4 ">
-                            <div class="social_media_links">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
                     <div class="row align-items-center">
@@ -110,7 +82,9 @@
                 </div>
             </div>
             <div class="dog_thumb d-none d-lg-block">
-                <img src="img/banner/dog.png" alt="">
+                <!-- 
+                 <img src="img/banner/dog.png" alt="">
+                 -->
             </div>
         </div>
     </div>
@@ -139,12 +113,12 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="pet : ${listaDados}">
-				<td th:text="${pet.id}"> 1 </td>
-				<td th:text="${pet.nomeHotel}"> Nome </td>
-				<td th:text="${pet.soliContato}"> Contato </td>	
-				<td th:text="${pet.tipo}"> Tipo </td>
-				<td th:text="${pet.descricao}"> Descricao </td>
+			<tr th:each="reserva : ${listaDados}">
+				<td th:text="${reserva.id}">  </td>
+				<td th:text="${reserva.nomeHotel}">  </td>
+				<td th:text="${reserva.soliContato}">  </td>	
+				<td th:text="${reserva.tipo}">  </td>
+				<td th:text="${reserva.descricao}">  </td>
 			</tr>
 		</tbody>
 	
@@ -159,7 +133,7 @@
   
 
        <!-- footer_start  -->
-    <footer class="footer">
+    <footer class="footer foot">
         <div class="copy-right_text">
             <div class="container">
                 <div class="bordered_1px"></div>

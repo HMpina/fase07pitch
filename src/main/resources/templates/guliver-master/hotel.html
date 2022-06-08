@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ícone  -->
+    <link rel="shortcut icon" href="../images/camera-reels.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- Bootstrap Icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- MEU CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Gulliver Traveller</title>
+
+</head>
+
+<body class="bg-paleta5">
+
+    <!-- INÍCIO da barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-pal1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index"><i class="bi bi-camera-reels mx-2"></i>Guliver Traveller</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link me-3 text-light" href="historicoHotel">Minhas reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 text-light" aria-current="page" href="#">Seleção do mês</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3 text-light" href="admin">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM da barra de navegação -->
+
+
+
+    <!-- INÍCIO da DIV principal -->
+    <div class="container mt-4">
+
+
+        <!-- INÍCIO do conteúdo principal -->
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <img src="../images/hotel.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="col ms-4">
+                <h1 class="display-3 mb-4">Escolha seu hotel</h1>
+
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias veniam corrupti
+                    sapiente iusto voluptas cumque dolore libero fuga suscipit ipsa accusamus dicta in voluptatum ea
+                    voluptate et sequi, quidem provident.</p>
+            </div>
+        </div>
+        <div class="separation-line bg-dark my-5 container">
+        </div>
+
+        <!-- INÍCIO lista hotéis -->
+
+
+
+            <!-- coluna de hotéis -->
+            <div class="col-sm-9">
+
+                <!-- linha do primeiro hotel -->
+                <div class="row row-sm p-3">
+
+                    <!-- coluna da imagem do hotel -->
+                    <div class="col-sm-4">
+                        <div class="position-absolute">
+
+                            <img src="../images/sheraton.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0"
+                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-zoom-in" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
+                                    </path>
+                                    <path
+                                        d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z">
+                                    </path>
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- fim da coluna da imagem do hotel -->
+
+                    <!-- coluna dos detalhes do hotel -->
+                    <div class="col-sm-8">
+                        <div class="pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-half" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+                            </svg>
+                        </div>
+                        <div class="desc-hot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                            quam earum consequuntur quae quas impedit ex, dolore labore nostrum beatae! Id officiis
+                            itaque accusamus dignissimos ab in aliquam enim iusto assumenda incidunt fuga, ratione
+                            ipsam modi totam sequi, nostrum ullam velit corrupti sit tempora obcaecati!</div>
+
+                        <!-- INICIO MODAL01 -->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel">Localizacao</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">                                        
+                                        <div id="map"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes do Hotel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes do Hotel</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quam earum consequuntur quae quas impedit ex, dolore labore nostrum beatae! Id officiis itaque accusamus dignissimos ab in aliquam enim iusto assumenda incidunt fuga, ratione ipsam modi totam sequi, nostrum ullam velit corrupti sit tempora obcaecati!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Localizacao</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-link" data-bs-toggle="modal" href="#exampleModalToggle"
+                            role="button">Localizacao</a>
+                        <!-- FIM MODAL 01 -->
+
+
+                    </div>
+                    <!-- fim da coluna dos detalhes do hotel -->
+
+                </div>
+                <!-- FIM da lina do primeiro hotel -->
+
+                <!-- linha do SEGUNDO hotel -->
+                <div class="row row-sm p-3">
+
+                    <!-- coluna da imagem do hotel -->
+                    <div class="col-sm-4">
+                        <div class="position-absolute">
+
+                            <img src="../images/bourbon-ibirapuera.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-zoom-in" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
+                                    </path>
+                                    <path
+                                        d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z">
+                                    </path>
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- fim da coluna da imagem do hotel -->
+
+                    <!-- coluna dos detalhes do hotel -->
+                    <div class="col-sm-8">
+                        <div class="pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-half" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="desc-hot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                            quam earum consequuntur quae quas impedit ex, dolore labore nostrum beatae! Id officiis
+                            itaque accusamus dignissimos ab in aliquam enim iusto assumenda incidunt fuga, ratione
+                            ipsam modi totam sequi, nostrum ullam velit corrupti sit tempora obcaecati!</div>
+                    </div>
+                    <!-- fim da coluna dos detalhes do hotel -->
+
+                </div>
+                <!-- FIM da lina do SEGUNDO hotel -->
+                <div class="row row-sm p-3">
+
+                    <!-- coluna da imagem do hotel -->
+                    <div class="col-sm-4">
+                        <div class="position-absolute">
+
+                            <img src="../images/blue-tree-morumbi.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-zoom-in" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
+                                    </path>
+                                    <path
+                                        d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z">
+                                    </path>
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- fim da coluna da imagem do hotel -->
+
+                    <!-- coluna dos detalhes do hotel -->
+                    <div class="col-sm-8">
+                        <div class="pb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                            </svg>
+                        </div>
+                        <div class="desc-hot">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci
+                            quam earum consequuntur quae quas impedit ex, dolore labore nostrum beatae! Id officiis
+                            itaque accusamus dignissimos ab in aliquam enim iusto assumenda incidunt fuga, ratione
+                            ipsam modi totam sequi, nostrum ullam velit corrupti sit tempora obcaecati!</div>
+                    </div>
+                    <!-- fim da coluna dos detalhes do hotel -->
+
+                </div>
+                <!-- linha do TERCEIRO hotel -->
+
+                <!-- FIM da lina do TERCEIRO hotel -->
+
+
+
+            </div>
+            <!-- FIM coluna hotéis -->
+
+
+        </div>
+        <!-- FIM lista hotéis -->
+
+    <!-- FIM da DIV principal -->
+
+    <!-- INÍCIO do footer -->
+    <footer class="bg-pal1 text-center text-lg-start">
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-light">
+            © 2021 Copyright:
+            <a class="text-light text-decoration-none" href="https://github.com/HMpina">HMpina</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- FIM do footer -->
+
+    <!-- CHAMADA DO JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0MpYGd-Og0D62CKLAYQlAbRCPSitYVXk&callback=initMap"
+        async>
+    </script>
+    
+    <script src="../js/maps.js"></script>
+
+    <!-- FIM DA CHAMADA DO JS -->
+</body>
+
+</html>

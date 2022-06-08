@@ -41,6 +41,13 @@ public class HotelController {
 		return "guliver-master/admin";
 	}
 
+	@GetMapping("/hotel")
+	public String hoteis(Model request) {
+		List<HotelModel> lista = hotelRepository.findAll();
+		request.addAttribute("hotel", lista);	
+		return "guliver-master/hotel";
+	}
+
 	@GetMapping("/listaDados")
 	public String listaDados(Model request) {
 		List<HotelModel> lista = hotelRepository.findAll();
@@ -53,42 +60,54 @@ public class HotelController {
 		return "formulario";
 	}
 	
-	@PostMapping("/formularioNovo")
-	public String formularioNovo(HotelModel requisicao) {
-		requisicao.setStatus("Pendente");
-		hotelRepository.save(requisicao);
-		return "redirect:/listaDados";
-	}
+//	@PostMapping("/formularioNovo")
+//	public String formularioNovo(HotelModel requisicao) {
+//		requisicao.setStatus("Pendente");
+//		hotelRepository.save(requisicao);
+//		return "redirect:/listaDados";
+//	}
 	
-	@GetMapping("/update/{id}/{status}")
-	public String update(@PathVariable Long id, @PathVariable String status) {
+//	@GetMapping("/update/{id}/{status}")
+//	public String update(@PathVariable Long id, @PathVariable String status) {
 		
-		HotelModel pet = hotelRepository.getById(id);
-		pet.setStatus(status);
-		
-		hotelRepository.save(pet);
-		
-		return "redirect:/index";
-	}
+//		HotelModel pet = hotelRepository.getById(id);
+//		pet.setStatus(status);
+//		
+//		hotelRepository.save(pet);
+//		
+//		return "redirect:/index";
+//	}
 	
 	
 	@GetMapping("/index")
 	public String index(Model request) {
 		List<HotelModel> lista = hotelRepository.findAll();
 		request.addAttribute("listaDados", lista);	
-		return "guliver-master/index";
+		return "index";
 	}
 	
-	@GetMapping("/historico")
-	public String historico() {
-		return "guliver-master/historico";
+	@GetMapping("/historicoHotel")
+	public String historicoHotel(Model request) {
+		List<HotelModel> lista = hotelRepository.findAll();
+		request.addAttribute("listaDados", lista);
+		return "guliver-master/historicoHotel";
+	}
+
+	@GetMapping("/historicoConcessionaria")
+	public String historicoConcessionaria(Model request) {
+				return "guliver-master/historicoConcessionaria";
+	}
+
+	@GetMapping("/historicoRestaurante")
+	public String historicoRestaurante(Model request) {
+		return "guliver-master/historicoRestaurante";
 	}
 	
-	@PostMapping("/denunciaNovo")
-	public String denunciaNovo(HotelModel requisicao) {
-		requisicao.setStatus("Pendente");
-		hotelRepository.save(requisicao);
-		return "redirect:/index";
-	}
+//	@PostMapping("/denunciaNovo")
+//	public String denunciaNovo(HotelModel requisicao) {
+//		requisicao.setStatus("Pendente");
+//		hotelRepository.save(requisicao);
+//		return "redirect:/index";
+//	}
 
 }

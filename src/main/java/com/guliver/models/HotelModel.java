@@ -14,14 +14,10 @@ public class HotelModel {
 	@GeneratedValue(generator = "increment")
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long id;
+	private String dataReserva;
 	private String nomeHotel;
-	private String soliContato;
-	private String tipo;
-	private String descricao;
-	private String localizacao;
-	private String status;
+	private double nota;
 
-	
 	
 	public Long getId() {
 		return id;
@@ -31,52 +27,28 @@ public class HotelModel {
 		this.id = id;
 	}
 
-	public String getSolicitante() {
+	public String getDataReserva() {
+		return dataReserva;
+	}
+
+	public void setDataReserva(String dataReserva) {
+		this.dataReserva = dataReserva;
+	}
+
+	public String getNomeHotel() {
 		return nomeHotel;
 	}
 
-	public void setSolicitante(String solicitante) {
-		this.nomeHotel = solicitante;
+	public void setNomeHotel(String nomeHotel) {
+		this.nomeHotel = nomeHotel;
 	}
 
-	public String getSoliContato() {
-		return soliContato;
+	public double getNota() {
+		return nota;
 	}
 
-	public void setSoliContato(String soliContato) {
-		this.soliContato = soliContato;
-	}
-
-	public String getTipo() {
-		return tipo;
-	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-
-	public String getLocalizacao() {
-		return localizacao;
-	}
-
-	public void setLocalizacao(String localizacao) {
-		this.localizacao = localizacao;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
+	public void setNota(double nota) {
+		this.nota = nota;
 	}
 
 	@Override
