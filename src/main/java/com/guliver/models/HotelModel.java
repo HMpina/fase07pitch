@@ -2,9 +2,10 @@ package com.guliver.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.hibernate.annotations.GenericGenerator;
+//import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class HotelModel {
@@ -14,8 +15,12 @@ public class HotelModel {
 	@GeneratedValue(generator = "increment")
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long id;
-	private String dataReserva;
 	private String nomeHotel;
+	private String codHotel;
+	private String qtdHospedes;
+	private String inicioReserva;
+	private String fimReserva;
+	private String valorReserva;
 	private double nota;
 
 	
@@ -27,20 +32,52 @@ public class HotelModel {
 		this.id = id;
 	}
 
-	public String getDataReserva() {
-		return dataReserva;
-	}
-
-	public void setDataReserva(String dataReserva) {
-		this.dataReserva = dataReserva;
-	}
-
 	public String getNomeHotel() {
 		return nomeHotel;
 	}
 
 	public void setNomeHotel(String nomeHotel) {
 		this.nomeHotel = nomeHotel;
+	}
+
+	public String getCodHotel() {
+		return codHotel;
+	}
+
+	public void setCodHotel(String codHotel) {
+		this.codHotel = codHotel;
+	}
+
+	public String getQtdHospedes() {
+		return qtdHospedes;
+	}
+
+	public void setQtdHospedes(String qtdHospedes) {
+		this.qtdHospedes = qtdHospedes;
+	}
+
+	public String getInicioReserva() {
+		return inicioReserva;
+	}
+
+	public void setInicioReserva(String inicioReserva) {
+		this.inicioReserva = inicioReserva;
+	}
+
+	public String getFimReserva() {
+		return fimReserva;
+	}
+
+	public void setFimReserva(String fimReserva) {
+		this.fimReserva = fimReserva;
+	}
+
+	public String getValorReserva() {
+		return valorReserva;
+	}
+
+	public void setValorReserva(String valorReserva) {
+		this.valorReserva = valorReserva;
 	}
 
 	public double getNota() {

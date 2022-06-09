@@ -66,7 +66,7 @@
 
             </div>
             <div class="col ms-4">
-                <h1 class="display-3 mb-4">Escolha seu hotel</h1>
+                <h1 class="display-3 mb-4">Alugue seu veículo</h1>
 
                 <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias veniam corrupti
                     sapiente iusto voluptas cumque dolore libero fuga suscipit ipsa accusamus dicta in voluptatum ea
@@ -85,13 +85,13 @@
 
                 <!-- linha do primeiro hotel -->
                 <div class="row row-sm p-3">
-                    <div class="row row-nome-hotel">HOTEL ABCD</div>
+                    <div class="row row-nome-hotel">Possantes SA</div>
 
-                    <!-- coluna da imagem do hotel -->
+                    <!-- coluna da imagem da concessionária -->
                     <div class="col-sm-4">
                         <div class="position-absolute">
 
-                            <img src="../images/sheraton.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <img src="../images/car.png" alt="" class="rounded img-fluid img-hotel">
                             <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0"
                                 data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -109,9 +109,9 @@
                             </button>
                         </div>
                     </div>
-                    <!-- fim da coluna da imagem do hotel -->
+                    <!-- fim da coluna da imagem da concessionária -->
 
-                    <!-- coluna dos detalhes do hotel -->
+                    <!-- coluna dos detalhes da concessionária -->
                     <div class="col-sm-8">
                         <div class="pb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -160,7 +160,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes do Hotel</button>
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes da concessionária</button>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes do Hotel</h5>
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes da concessionária</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -202,28 +202,17 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="reservarHotel" method="POST">
+                                    <form action="" method="">
                                         <div class="form-group">
-                                            <label for="nomeHotel"> Nome do hotel</label>
-                                            <input type="text" class="form-control" readonly name="nomeHotel" value="Hotel ABCD">
-                                            <small>Nome do hotel selecionado</small>
+                                            <label for="nomeHotel"> Nome da cooncessionária</label>
+                                            <input type="text" class="form-control" readonly name="nomeHotel" value="Possantes SA">
+                                            <small>Nome da concessionária selecionada</small>
                                         </div>
                                         <div class="form-group">
-                                            <label for="codHotel"> Código do hotel</label>
+                                            <label for="codHotel"> Código da concessionaria</label>
                                             <input type="text" class="form-control" readonly name="codHotel" value="5">
-                                            <small>Código do hotel selecionado</small>
+                                            <small>Código da concessionária selecionada</small>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="mr-sm-2 sr-only" for="qtdHospedes"> Qtde. de hóspedes</label>
-                                            <select class="custom-select form-control mr-sm-2" required name="qtdHospedes" id="inlineFormCustomSelect">
-                                              <option selected>Escolher...</option>
-                                              <option value="1">Um</option>
-                                              <option value="2">Dois</option>
-                                              <option value="3">Três</option>
-                                              <option value="4">Quarto</option>
-                                            </select>
-                                            <small>Indicar somente quantidade de adultos</small>
-                                          </div>
                                         <div class="form-group">
                                             <label for="inicioReserva">Início reserva</label>
                                             <input type="text" required class="form-control" name="inicioReserva">
@@ -236,11 +225,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label type="text" for="valorReserva">Valor da reserva</label>
-                                            <input class="form-control" readonly name="valorReserva" value="599,40">
+                                            <input class="form-control" readonly name="valorReserva" value="344,20">
                                             <small>Valor calculado</small>
                                         </div>
 
-                                        <button class="btn btn-round btn-info" type="submit"> Reservar</button>
+                                        <button class="btn btn-round btn-info"> Reservar</button>
                                     </form>
 
                                 </div>
@@ -255,21 +244,21 @@
 
 
                     </div>
-                    <!-- fim da coluna dos detalhes do hotel -->
+                    <!-- fim da coluna dos detalhes da concessionária -->
 
                 </div>
                 <!-- FIM da lina do primeiro hotel -->
 
 
-                <!-- linha do SEGUNDO hotel -->
+                <!-- linha do SEGUNda concessionária -->
                 <div class="row row-sm p-3">
-                    <div class="row row-nome-hotel">HOTEL XPTO</div>
+                    <div class="row row-nome-hotel">ALUGA CARROS XPTO</div>
 
-                    <!-- coluna da imagem do hotel -->
+                    <!-- coluna da imagem da concessionária -->
                     <div class="col-sm-4">
                         <div class="position-absolute">
 
-                            <img src="../images/comfort-ibirapuera.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <img src="../images/car.png" alt="" class="rounded img-fluid img-hotel">
                             <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0"
                                 data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -287,9 +276,9 @@
                             </button>
                         </div>
                     </div>
-                    <!-- fim da coluna da imagem do hotel -->
+                    <!-- fim da coluna da imagem da concessionária -->
 
-                    <!-- coluna dos detalhes do hotel -->
+                    <!-- coluna dos detalhes da concessionária -->
                     <div class="col-sm-8">
                         <div class="pb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -338,7 +327,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes do Hotel</button>
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes da concessionária</button>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +337,7 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes do Hotel</h5>
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes da concessionária</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -378,28 +367,17 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="reservarHotel" method="POST">
+                                    <form action="" method="">
                                         <div class="form-group">
-                                            <label for="nomeHotel"> Nome do hotel</label>
-                                            <input type="text" class="form-control" readonly name="nomeHotel" value="Hotel XPTO">
-                                            <small>Nome do hotel selecionado</small>
+                                            <label for="nomeHotel"> Nome da cooncessionária</label>
+                                            <input type="text" class="form-control" readonly name="nomeHotel" value="Aluga Carros SA">
+                                            <small>Nome da concessionária selecionada</small>
                                         </div>
                                         <div class="form-group">
-                                            <label for="codHotel"> Código do hotel</label>
-                                            <input type="text" class="form-control" readonly name="codHotel" value="2">
-                                            <small>Código do hotel selecionado</small>
+                                            <label for="codHotel"> Código da concessionaria</label>
+                                            <input type="text" class="form-control" readonly name="codHotel" value="4">
+                                            <small>Código da concessionária selecionada</small>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="mr-sm-2 sr-only" for="qtdHospedes"> Qtde. de hóspedes</label>
-                                            <select class="custom-select form-control mr-sm-2" required name="qtdHospedes" id="inlineFormCustomSelect">
-                                              <option selected>Escolher...</option>
-                                              <option value="1">Um</option>
-                                              <option value="2">Dois</option>
-                                              <option value="3">Três</option>
-                                              <option value="4">Quarto</option>
-                                            </select>
-                                            <small>Indicar somente quantidade de adultos</small>
-                                          </div>
                                         <div class="form-group">
                                             <label for="inicioReserva">Início reserva</label>
                                             <input type="text" required class="form-control" name="inicioReserva">
@@ -412,13 +390,12 @@
                                         </div>
                                         <div class="form-group">
                                             <label type="text" for="valorReserva">Valor da reserva</label>
-                                            <input class="form-control" readonly name="valorReserva" value="388,50">
+                                            <input class="form-control" readonly name="valorReserva" value="344,20">
                                             <small>Valor calculado</small>
                                         </div>
 
-                                        <button class="btn btn-round btn-info" type="submit"> Reservar</button>
+                                        <button class="btn btn-round btn-info"> Reservar</button>
                                     </form>
-
                                 </div>
 
                             </div>
@@ -431,22 +408,22 @@
 
 
                     </div>
-                    <!-- fim da coluna dos detalhes do hotel -->
+                    <!-- fim da coluna dos detalhes da concessionária -->
 
                 </div>
 
-                <!-- FIM da lina do SEGUNDO hotel -->
+                <!-- FIM da lina do SEGUNda concessionária -->
 
                 
                 <!-- linha do TERCEIRO hotel -->
                 <div class="row row-sm p-3">
-                    <div class="row row-nome-hotel">HOTEL ALFA</div>
+                    <div class="row row-nome-hotel">CAR RENTAL ALFA</div>
 
-                    <!-- coluna da imagem do hotel -->
+                    <!-- coluna da imagem da concessionária -->
                     <div class="col-sm-4">
                         <div class="position-absolute">
 
-                            <img src="../images/bourbon-ibirapuera.jpg" alt="" class="rounded img-fluid img-hotel">
+                            <img src="../images/car.png" alt="" class="rounded img-fluid img-hotel">
                             <button type="button" class="btn btn-secondary btn-sm position-absolute top-0 end-0"
                                 data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -464,9 +441,9 @@
                             </button>
                         </div>
                     </div>
-                    <!-- fim da coluna da imagem do hotel -->
+                    <!-- fim da coluna da imagem da concessionária -->
 
-                    <!-- coluna dos detalhes do hotel -->
+                    <!-- coluna dos detalhes da concessionária -->
                     <div class="col-sm-8">
                         <div class="pb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -515,7 +492,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes do Hotel</button>
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Detalhes da concessionária</button>
                                 </div>
                             </div>
                         </div>
@@ -525,7 +502,7 @@
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes do Hotel</h5>
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Detalhes da concessionária</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
@@ -555,28 +532,17 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="reservarHotel" method="POST">
+                                    <form action="" method="">
                                         <div class="form-group">
-                                            <label for="nomeHotel"> Nome do hotel</label>
-                                            <input type="text" class="form-control" readonly name="nomeHotel" value="Hotel ALFA">
-                                            <small>Nome do hotel selecionado</small>
+                                            <label for="nomeHotel"> Nome da concessionária</label>
+                                            <input type="text" class="form-control" readonly name="nomeHotel" value="CAR RENTAL ALFA">
+                                            <small>Nome da concessionária selecionada</small>
                                         </div>
                                         <div class="form-group">
-                                            <label for="codHotel"> Código do hotel</label>
-                                            <input type="text" class="form-control" readonly name="codHotel" value="1">
-                                            <small>Código do hotel selecionado</small>
+                                            <label for="codHotel"> Código da concessionaria</label>
+                                            <input type="text" class="form-control" readonly name="codHotel" value="5">
+                                            <small>Código da concessionária selecionada</small>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="mr-sm-2 sr-only" for="qtdHospedes"> Qtde. de hóspedes</label>
-                                            <select class="custom-select form-control mr-sm-2" required name="qtdHospedes" id="inlineFormCustomSelect">
-                                              <option selected>Escolher...</option>
-                                              <option value="1">Um</option>
-                                              <option value="2">Dois</option>
-                                              <option value="3">Três</option>
-                                              <option value="4">Quarto</option>
-                                            </select>
-                                            <small>Indicar somente quantidade de adultos</small>
-                                          </div>
                                         <div class="form-group">
                                             <label for="inicioReserva">Início reserva</label>
                                             <input type="text" required class="form-control" name="inicioReserva">
@@ -589,13 +555,12 @@
                                         </div>
                                         <div class="form-group">
                                             <label type="text" for="valorReserva">Valor da reserva</label>
-                                            <input class="form-control" readonly name="valorReserva" value="766,30">
+                                            <input class="form-control" readonly name="valorReserva" value="344,20">
                                             <small>Valor calculado</small>
                                         </div>
 
-                                        <button class="btn btn-round btn-info" type="submit"> Reservar</button>
+                                        <button class="btn btn-round btn-info"> Reservar</button>
                                     </form>
-
                                 </div>
 
                             </div>
@@ -608,7 +573,7 @@
 
 
                     </div>
-                    <!-- fim da coluna dos detalhes do hotel -->
+                    <!-- fim da coluna dos detalhes da concessionária -->
 
                 </div>
 

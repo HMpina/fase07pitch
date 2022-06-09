@@ -53,26 +53,64 @@
 
         <!-- INÍCIO do conteúdo principal -->
         <div class="row">
-            <div id="right1" class="col-6">
+            <div id="right1" class="col">
                 <div class="grid" style="--bs-row: 2;">
                     <div class="g-start-1">
-                        <h1 class="display-3 mb-4 fw-bold">Minhas reservas</h1>
+                        <h1 class="display-3 mb-4 fw-bold">Cadastre novos locais para os cliente explorarem</h1>
                     </div>
                 </div>
             </div>
 
 
         </div>
-        <div class="row text-center">
-            <div class="g-start-2">
-                <p>
-                    Consulte suas últimas viagens, avalie sua experiência ou repita a aventura!</p>
-            </div>
+        <div class="button-top">
+        <button class="btn btn-round btn-info">Hotel</button>
+        <button class="btn btn-round btn-outline-info">Concessionária</button>
+        <button class="btn btn-round btn-outline-info">Parque</button>
+        <button class="btn btn-round btn-outline-info">Restaurante</button>
+        <button class="btn btn-round btn-outline-info">Vida noturna</button>
+        <button class="btn btn-round btn-outline-info">Teatro</button>
         </div>
+        
+        
 
         <!-- INÍCIO links de páginas -->
 
-
+		<form>
+	<div class="form-group">
+		<label for="solicitante" class="font-weight-bold"> Nome do Hotel</label>
+		<input class="form-control" name="solicitante">
+		<small class="font-weight-light">Informe o nome do hotel</small>
+	</div>
+	<div class="form-group">
+		<label for="soliContato" class="font-weight-bold"> CNPJ</label>
+		<input class="form-control" name="soliContato">
+		<small class="font-weight-light">Informe o CNPJ do hotel</small>
+	</div>
+	<div class="form-group">
+		<label for="tipo" class="font-weight-bold"> Tipo de Cama</label>
+		<input class="form-control" name="tipo">
+		<small class="font-weight-light">Qual o tipo de cama</small>
+	</div>
+	<div class="form-group">
+		<label for="tipo" class="font-weight-bold"> Descrição do hotel</label>
+		<input class="form-control" name="tipo">
+		<small class="font-weight-light">Informe o que o cliente precisa saber do hotel</small>
+	</div>
+	<div class="form-group">
+		<label for="descricao" class="font-weight-bold"> Latitude</label>
+		<input class="form-control" name="descricao">
+		<small class="font-weight-light">Informe a latitude</small>
+	</div>
+	<div class="form-group">
+		<label for="localizacao" class="font-weight-bold"> Longitude</label>
+		<input class="form-control" name="localizacao">
+		<small class="font-weight-light">Informe a longitude</small>
+	</div>
+	
+	<button class="btn btn-round btn-info"> Cadastrar</button>
+</form>
+		
 
 
 

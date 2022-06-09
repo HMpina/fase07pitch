@@ -2,12 +2,16 @@ package com.guliver.controllers;
 
 import java.util.List;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.guliver.models.HotelModel;
@@ -48,6 +52,13 @@ public class HotelController {
 		return "guliver-master/hotel";
 	}
 
+	@GetMapping("/concessionarias")
+	public String concessionarias(Model request) {
+		List<HotelModel> lista = hotelRepository.findAll();
+		request.addAttribute("concessionarias", lista);	
+		return "guliver-master/concessionarias";
+	}
+
 	@GetMapping("/listaDados")
 	public String listaDados(Model request) {
 		List<HotelModel> lista = hotelRepository.findAll();
@@ -59,13 +70,8 @@ public class HotelController {
 	public String formulario() {
 		return "formulario";
 	}
+
 	
-//	@PostMapping("/formularioNovo")
-//	public String formularioNovo(HotelModel requisicao) {
-//		requisicao.setStatus("Pendente");
-//		hotelRepository.save(requisicao);
-//		return "redirect:/listaDados";
-//	}
 	
 //	@GetMapping("/update/{id}/{status}")
 //	public String update(@PathVariable Long id, @PathVariable String status) {
@@ -78,6 +84,16 @@ public class HotelController {
 //		return "redirect:/index";
 //	}
 	
+	@GetMapping("/atualizarNota/{id}")
+	public String atualizarNota(@PathVariable Long id) {
+		
+		HotelModel existente = hotelRepository.getById(id);
+		existente.setNota(7.7);
+		
+		hotelRepository.save(existente);
+		
+		return "guliver-master/historicoHotel";
+	}
 	
 	@GetMapping("/index")
 	public String index(Model request) {
@@ -89,25 +105,18 @@ public class HotelController {
 	@GetMapping("/historicoHotel")
 	public String historicoHotel(Model request) {
 		List<HotelModel> lista = hotelRepository.findAll();
-		request.addAttribute("listaDados", lista);
+		request.addAttribute("historicoHotel", lista);
 		return "guliver-master/historicoHotel";
 	}
 
-	@GetMapping("/historicoConcessionaria")
-	public String historicoConcessionaria(Model request) {
-				return "guliver-master/historicoConcessionaria";
+	@PostMapping("/reservarHotel")
+	public String reservarHotel(HotelModel requisicao) {
+		hotelRepository.save(requisicao);
+		return "guliver-master/historicoHotel";
 	}
 
-	@GetMapping("/historicoRestaurante")
-	public String historicoRestaurante(Model request) {
-		return "guliver-master/historicoRestaurante";
-	}
+
 	
-//	@PostMapping("/denunciaNovo")
-//	public String denunciaNovo(HotelModel requisicao) {
-//		requisicao.setStatus("Pendente");
-//		hotelRepository.save(requisicao);
-//		return "redirect:/index";
-//	}
-
+	
+	
 }

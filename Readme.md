@@ -1,61 +1,55 @@
-# Usando o Heroku + Spring boot
+# FIAP - Case Gulliver Traveller
 
-##### * Abrir o terminal a partir do Projeto.
+##### * API externa utilizada:
+```
+API do Google Maps
 
-##### * Criar o Repositorio Git:
-```
-git init
-git add .
-git commit -am "Start"
-git branch -M master
-git remote add origin <URL>
-git push -u origin master
-```
-##### * Configurando o Heroku
-
-```
-heroku login
-heroku create <nome do projeto>
+Para o case do projeto Gulliver o Steve Jobs nos indicou que e importante dar consciencia aos clientes sobre a distancia de seus locais de endereco em relacao a avenida Paulista, em especial a hospedagem.
+Por esse motivo foi escolhido a implementacao da API de mapas do Google Maps com uso de marcadores para distinguir o hotel e o ponto de referencia, acessivel na pagina Hotel, e utilizando os dados de latitude e longitude cadastrados pelo administrador.
 ```
 
-Agora é necessario ativar o Postgresql
-
+##### * API interna criada:
 ```
-heroku addons:create heroku-postgresql:hobby-dev
-```
+Cadastro de reserva
 
-##### * Fazendo deploy
-
-
-```
-git push heroku master
+A partir do hotel selecionado pelo cliente mais as informações inseridas no formulário de reserva é cadastrado no banco de dados uma reserva para o cliente.
 ```
 
-Para acompanhar e verificar os logs do projeto 
-
+##### * Banco de dados:
 ```
-heroku logs --tail
-```
+Desenvolvimento
 
-##### * Abrir Aplicação
+Durante os testes locais foi utilizado o mysql para armazenamento das informações de banco de dados.
 ```
-heroku open
 ```
+Produção
 
-##### * Visualizar os dados
-
-
-```
-https://nfg-spring-petcare.herokuapp.com/home
+No ambiente final online foi utilizado o postgree para armazenamento das informações de banco de dados por ser gratuito e ter boa comunicação com o heroku.
 ```
 
-#### * Shutdown / Start
-
-É necessario executar
-
+##### * Hospedagem:
 ```
-heroku maintenance:off
-heroku maintenance:on
+Heroku
+
+Por ser gratuito e oferecer uma integração boa com o eclipse foi utilizado o heroku para hospedagem do projeto.
 ```
 
-###### Referência: 
+##### * Desenvolvimento:
+```
+Front - Visual Studio Code
+
+Durante as fases iniciais do projeto e pela intuitividade foi utilizado o VSCode para criação do front nas páginas HTML, o CSS e JS.
+```
+
+```
+Back e integração - IDE Eclipse
+
+Para integração com banco de dados, backend e integração com o front foi utilizado a IDE Eclipse na versão Enterprise para Web Developers.
+```
+
+##### * Repositório e versionamento:
+```
+Github
+
+Foi utilizado para versionamento e repositório online o Github, que além de acionado pelo Git também foi utilizado no terminal do Eclipse.
+```

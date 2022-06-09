@@ -78,101 +78,238 @@
 
         <!-- INÍCIO links de páginas -->
 
-        <section class="pb-2">
-            <a type="button" href="historicoHotel" class="btn btn-info">Hotéis</a>
-            <a type="button" href="historicoConcessionaria" class="btn btn-outline-info">Concessionárias</a>
-            <a type="button" href="historicoRestaurante" class="btn btn-outline-info">Restaurantes</a>
-        </section>
 
-
-        <button class="accordion">Reserva de 01/05/22</button>
+        <button class="accordion first-button">Reservas de Hotéis</button>
         <div class="panel mb-3">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#Reserva</th>
-                        <th scope="col">Nome hotel</th>
-                        <th scope="col">Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">9876</th>
-                        <td>Pullman Brothers</td>
-                        <td>9.1</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <button type="button" class="btn btn-outline-info">Repetir</button>
-            <button type="button" class="btn btn-outline-info">Avaliar</button>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">  </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="reserv : ${historicoHotel}">
+		        <td>
+		        <button class="accordion">Reserva de <span th:text="${reserv.inicioReserva}"></button>
+		        <div class="panel mb-3">
+		            <table class="table table-striped">
+		                <thead>
+		                    <tr>
+		                        <th scope="col">#Reserva2</th>
+		                        <th scope="col">Nome hotel</th>
+		                        <th scope="col">Nota</th>
+		                    </tr>
+		                </thead>
+		                <tbody>
+		                    <tr>
+								<td th:text="${reserv.id}"> 1 </td>
+								<td th:text="${reserv.nomeHotel}"> Nome </td>
+								<td th:text="${reserv.nota}"> Contato </td>	
+		                    </tr>
+		                </tbody>
+		            </table>
+		            <button type="button" class="btn btn-outline-info">Repetir</button>
+		            <a type="button" href="/atualizarNota/${reserv.id}" class="btn btn-outline-info">Avaliar</a>
+		        </div>
+		        </td>
+        	</tr>
+		</tbody>
+	</table>
+	
+        </div>
+        
+        <button class="accordion">Reservas de Concessionárias</button>
+        <div class="panel mb-3">
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">  </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+		        <td>
+			        <button class="accordion">Reserva de 01/05/22</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">9876</th>
+			                        <td>Aluga Possantes</td>
+			                        <td>9.1</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+			
+			        <button class="accordion">Reserva de 12/04/22</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">9876</th>
+			                        <td>Aluga Car XPTO</td>
+			                        <td>9.1</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+			
+			        <button class="accordion">Reserva de 13/12/21</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">1234</th>
+			                        <td>Aluga Veiculos ABCD</td>
+			                        <td>9.5</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+		        </td>
+        	</tr>
+		</tbody>
+	</table>
+	
         </div>
 
-        <button class="accordion">Reserva de 01/05/22</button>
+
+        <button class="accordion">Reservas de Restaurantes</button>
         <div class="panel mb-3">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#Reserva</th>
-                        <th scope="col">Nome hotel</th>
-                        <th scope="col">Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">9876</th>
-                        <td>Pullman Brothers</td>
-                        <td>9.1</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" class="btn btn-outline-info">Repetir</button>
-            <button type="button" class="btn btn-outline-info">Avaliar</button>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">  </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+		        <td>
+			        <button class="accordion">Reserva de 01/05/22</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">9876</th>
+			                        <td>Le President</td>
+			                        <td>9.1</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+			
+			        <button class="accordion">Reserva de 12/04/22</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">7456</th>
+			                        <td>Gastronomiza Cozinha</td>
+			                        <td>8.1</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+			
+			        <button class="accordion">Reserva de 13/12/21</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">1234</th>
+			                        <td>Mocotó Comidas</td>
+			                        <td>9.5</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+			
+			        <button class="accordion">Reserva de 07/09/21</button>
+			        <div class="panel mb-3">
+			            <table class="table table-striped">
+			                <thead>
+			                    <tr>
+			                        <th scope="col">#Reserva</th>
+			                        <th scope="col">Nome concessionária</th>
+			                        <th scope="col">Nota</th>
+			                    </tr>
+			                </thead>
+			                <tbody>
+			                    <tr>
+			                        <th scope="row">4321</th>
+			                        <td>Bar Dona Onça</td>
+			                        <td>9.2</td>
+			                    </tr>
+			                </tbody>
+			            </table>
+			            <button type="button" class="btn btn-outline-info">Repetir</button>
+			            <button type="button" class="btn btn-outline-info">Avaliar</button>
+			        </div>
+
+		        </td>
+        	</tr>
+		</tbody>
+	</table>
+	
         </div>
 
-        <button class="accordion">Reserva de 13/12/21</button>
-        <div class="panel mb-3">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#Reserva</th>
-                        <th scope="col">Nome hotel</th>
-                        <th scope="col">Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1234</th>
-                        <td>Le Grand hotel</td>
-                        <td>9.5</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" class="btn btn-outline-info">Repetir</button>
-            <button type="button" class="btn btn-outline-info">Avaliar</button>
-        </div>
-
-        <button class="accordion">Reserva de 07/09/21</button>
-        <div class="panel mb-3">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">#Reserva</th>
-                        <th scope="col">Nome hotel</th>
-                        <th scope="col">Nota</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1234</th>
-                        <td>Blue Three Pinheiros</td>
-                        <td>8.4</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button type="button" class="btn btn-outline-info">Repetir</button>
-            <button type="button" class="btn btn-outline-info">Avaliar</button>
-        </div>
 
 
 

@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.row-nome-hotel{
+    margin-left: 0px;
+    font-weight: 650;
+}
+
+.row-sm{
+        margin-top: 30px;
+}
 
 .area{
     width: 100%;
@@ -47,7 +55,7 @@ main.cards section.card{
     border-radius: 10px;
     border-width: 1px;
     border-color: #FFF0F0 ;
-    max-height: 256px;
+    max-height: 300px;
 
     margin-top: 32px;
 }
@@ -57,14 +65,14 @@ main.cards section.card{
 }
 
 main.cards section.card .icon{
-    width: 150px;
-    height: 150px;
+    width: 225px;
+    height: 300px;
 }
 
 
 .main_image_area{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 
 main.cards section.card img{
@@ -165,7 +173,21 @@ main.cards section.card.card_restaurante:hover{
     background-color: #FFFCFC;
 }
 
+.button-top{
+	padding: 20px
+}
 
+.form-group{
+	padding: 10px 0;
+}
+
+.font-weight-bold{
+	font-weight: 600
+}
+
+.font-weight-light{
+	font-weight: 300
+}
 
 .accordion {
     background-color: #eee;
@@ -205,6 +227,11 @@ main.cards section.card.card_restaurante:hover{
 
 @media (max-width: 992px) {
 
+	
+	.row-sm{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
 
     section{
@@ -217,7 +244,7 @@ main.cards section.card.card_restaurante:hover{
 
     .row {
     display: inline;
-}
+	}
 
     .col-6{
         width: 100%;
@@ -233,7 +260,12 @@ main.cards section.card.card_restaurante:hover{
     .col, .ms-4 {
         margin-left: 5px !important;
     }
+	.first-button{
+		margin-left: 11px;
+	}
+
 }
+
 
 #map{
     height: 400px;
