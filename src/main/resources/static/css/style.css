@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.ac1{
+	background-color: 
+}
+
 .row-nome-hotel{
     margin-left: 0px;
     font-weight: 650;
@@ -188,6 +192,17 @@ main.cards section.card.card_restaurante:hover{
 .font-weight-light{
 	font-weight: 300
 }
+
+.ac1{
+    background-color: rgb(213, 72, 72);
+    color: #eee;
+}
+
+.ac2{
+    background-color: rgb(232, 144, 144);
+    color: #000;
+}
+
 
 .accordion {
     background-color: #eee;
