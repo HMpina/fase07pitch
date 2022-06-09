@@ -25,12 +25,6 @@ public class HotelController {
 	private HotelRepository hotelRepository;
 	
 	
-	@GetMapping("hello")
-	public String hello(Model request) {
-		request.addAttribute("nome", "PESSOAL..!");
-		return "hello";
-	}
-	
 	@GetMapping("/explore")
 	public String explore(Model request) {
 		List<HotelModel> lista = hotelRepository.findAll();
